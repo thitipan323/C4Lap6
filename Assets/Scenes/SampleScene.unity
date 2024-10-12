@@ -121,7 +121,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 632526cf2ceae6444b5f1f2727221db7, type: 2}
 --- !u!1 &15495335
 GameObject:
   m_ObjectHideFlags: 0
@@ -242,7 +242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxTasksPerTick: 500
-  behavior: {fileID: 11400000, guid: e79e37ce4a78d104b854845542fa566a, type: 2}
+  behavior: {fileID: 11400000, guid: c7b138f64fa2e794a909cb384518f358, type: 2}
   paused: 0
   restartWhenFinished: 0
   blackboard:
@@ -262,12 +262,15 @@ MonoBehaviour:
     colorParamsNames: []
     colorParamsLostDefaultValue: 
     objectParams:
-    - {fileID: 1769626071}
+    - {fileID: 963194227}
     objectParamsNames:
-    - wanderarea
+    - camera
     objectParamsLostDefaultValue: 
-    layerMaskParams: []
-    layerMaskParamsNames: []
+    layerMaskParams:
+    - serializedVersion: 2
+      m_Bits: 4294967295
+    layerMaskParamsNames:
+    - mask
     layerMaskParamsLostDefaultValue: 
     enumParamsNames: []
     enumParamsLostDefaultValue: 
@@ -496,13 +499,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 0, y: 20, z: -30}
+  m_LocalRotation: {x: 0.3130487, y: -0, z: -0, w: 0.94973713}
+  m_LocalPosition: {x: 0, y: 17.9, z: -21.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 36.486, y: 0, z: 0}
 --- !u!1 &1400799528
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,7 +524,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!64 &1400799529
 MeshCollider:
@@ -685,7 +688,7 @@ MonoBehaviour:
     colorParamsNames: []
     colorParamsLostDefaultValue: 
     objectParams:
-    - {fileID: 0}
+    - {fileID: 1400799528}
     objectParamsNames:
     - wanderarea
     objectParamsLostDefaultValue: 
